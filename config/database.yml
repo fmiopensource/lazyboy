@@ -1,0 +1,15 @@
+#development:
+#  adapter: postgresql
+#  database: db_name
+#  host: 127.0.0.1
+#  username: username
+#  password: password
+#  timeout: 5000
+#  
+development:
+  adapter: 
+  username: 
+  password: 
+  database: 
+  host: 
+  encoding: 

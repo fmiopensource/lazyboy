@@ -1,0 +1,29 @@
+.:LAZYBOY:. Version 0.8.2
+
+What is lazyboy?
+- Lazyboy is a simple ruby script built to import sql data to couchdb. It allows you to customize
+  your connection settings, development environments, and tables to import with configuration options
+  that will be very familar to anyone who has ever developed a Rails application.
+
+I've never used Rails or Ruby, is this still right for me?
+- Probably! All you need to worry about is the configuration files. Just as long as you follow the
+  steps below and use the examples in the config files you'll be fine.
+
+What do I need to run this?
+- Project Dependancies
+  - Ruby 1.8.6 or higher.
+  - ActiveRecord/ActiveSupport (tested with 2.3.2, but should work with any version higher than 2.1)
+    - gem install activerecord -v 2.3.2
+    - gem install activesupport -v 2.3.2
+  - rest-client 1.0.3 to 1.6.0 supported
+    - gem install rest-client -v 1.6.0
+
+Let's back it up shall we. It's as easy as 1,2,3!
+
+1. Set up your configuration files.
+    - set BACKUP_MODELS in the config/environment.rb to contain every model you wish to back up. Make sure to use lowercasing and underscores.
+    - set your database.yml file with your connection information.
+    - set your couchdb.yml file with your DB name. Remember, this app is configured to have couch running on the same server as this script for now.
+2. Run 'ruby lazyboy.rb'
+    - you can optionally pass in "RAILS_ENV=" + any evironment you have defined in your database.yml and couchdb.yml file
+3. There is no step 3.
